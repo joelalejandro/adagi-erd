@@ -15,3 +15,5 @@ alter table t_users
   add constraint fk_use_hum
   foreign key (human_id)
   references t_humans (human_id);
+
+create unique index udx_use_nam on t_users (username);
